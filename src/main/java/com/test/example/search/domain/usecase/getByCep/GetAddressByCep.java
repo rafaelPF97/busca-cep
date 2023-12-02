@@ -1,6 +1,6 @@
 package com.test.example.search.domain.usecase.getByCep;
 
-import com.test.example.search.domain.entity.Address;
+import com.test.example.search.domain.model.Address;
 import com.test.example.search.domain.exception.CepNotFoundException;
 import com.test.example.search.domain.gateway.AddressGateway;
 import com.test.example.search.domain.usecase.getByCep.input.GetEnderecoByCepInput;

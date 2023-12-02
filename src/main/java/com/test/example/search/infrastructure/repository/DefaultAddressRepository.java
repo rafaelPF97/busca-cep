@@ -1,8 +1,8 @@
 package com.test.example.search.infrastructure.repository;
 
-import com.test.example.search.domain.entity.Address;
+import com.test.example.search.domain.model.Address;
 import com.test.example.search.domain.reposity.AddressRepository;
-import com.test.example.search.infrastructure.repository.jpa.AddressEntity;
+import com.test.example.search.infrastructure.entity.AddressEntity;
 import com.test.example.search.infrastructure.repository.jpa.AddressJpa;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;

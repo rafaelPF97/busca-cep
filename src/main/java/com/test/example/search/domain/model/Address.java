@@ -1,4 +1,4 @@
-package com.test.example.search.domain.entity;
+package com.test.example.search.domain.model;
 
 import java.io.Serializable;
 import java.util.UUID;

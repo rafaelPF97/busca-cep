@@ -1,6 +1,6 @@
 package com.test.example.search.domain.usecase.getAll;
 
-import com.test.example.search.domain.entity.Address;
+import com.test.example.search.domain.model.Address;
 import com.test.example.search.domain.reposity.AddressRepository;
 import com.test.example.search.domain.usecase.shared.NoParams;
 import com.test.example.search.domain.usecase.shared.UseCase;

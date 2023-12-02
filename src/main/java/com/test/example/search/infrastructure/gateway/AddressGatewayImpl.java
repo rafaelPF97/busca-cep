@@ -1,9 +1,9 @@
 package com.test.example.search.infrastructure.gateway;
 
-import com.test.example.search.domain.entity.Address;
+import com.test.example.search.domain.model.Address;
 import com.test.example.search.domain.gateway.AddressGateway;
 import com.test.example.search.infrastructure.client.ViaCepClient;
-import com.test.example.search.infrastructure.repository.jpa.AddressEntity;
+import com.test.example.search.infrastructure.entity.AddressEntity;
 import com.test.example.search.infrastructure.repository.jpa.AddressJpa;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.test.example.search.infrastructure.client;
 
-import com.test.example.search.domain.entity.Address;
+import com.test.example.search.domain.model.Address;
 
 
 public class AddressViaCepDTO {

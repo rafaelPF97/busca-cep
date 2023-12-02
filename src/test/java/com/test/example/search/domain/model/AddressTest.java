@@ -1,4 +1,4 @@
-package com.test.example.search.domain.entity;
+package com.test.example.search.domain.model;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

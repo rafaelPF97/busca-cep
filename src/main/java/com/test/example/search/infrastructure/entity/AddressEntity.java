@@ -1,6 +1,6 @@
-package com.test.example.search.infrastructure.repository.jpa;
+package com.test.example.search.infrastructure.entity;
 
-import com.test.example.search.domain.entity.Address;
+import com.test.example.search.domain.model.Address;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

@@ -1,6 +1,6 @@
 package com.test.example.search.domain.reposity;
 
-import com.test.example.search.domain.entity.Address;
+import com.test.example.search.domain.model.Address;
 
 import java.util.List;
 

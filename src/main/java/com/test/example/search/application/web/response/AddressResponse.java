@@ -1,6 +1,6 @@
 package com.test.example.search.application.web.response;
 
-import com.test.example.search.domain.entity.Address;
+import com.test.example.search.domain.model.Address;
 
 public record AddressResponse(
         String cep,
