@@ -15,7 +15,7 @@ public class UpdateViews extends UseCaseVoidReturn<UpdateViewsInput> {
 
     @Override
     public void execute(UpdateViewsInput updateViewsInput) {
-        var addressFound = addressRepository.findByCep(updateViewsInput.getCep())
+        var addressFound = addressRepository.findByZipCode(updateViewsInput.getCep())
                 .orElseGet(() -> Address.create(
                                 updateViewsInput.getCep(),
                                 updateViewsInput.getLogradouro(),

@@ -15,7 +15,7 @@ public class SaveAddress extends UseCaseVoidReturn<SaveByCepInput> {
 
     @Override
     public void execute(SaveByCepInput saveByCepInput) {
-        var enderecoOptional = addressRepository.findByCep(saveByCepInput.zipCode());
+        var enderecoOptional = addressRepository.findByZipCode(saveByCepInput.zipCode());
         if (enderecoOptional.isPresent()) {
             return;
         }

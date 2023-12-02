@@ -3,10 +3,8 @@ package com.test.example.search.domain.usecase.getByCep;
 import com.test.example.search.domain.entity.Address;
 import com.test.example.search.domain.exception.CepNotFoundException;
 import com.test.example.search.domain.gateway.AddressGateway;
-import com.test.example.search.domain.reposity.AddressRepository;
 import com.test.example.search.domain.usecase.getByCep.input.GetEnderecoByCepInput;
 import com.test.example.search.domain.usecase.shared.UseCase;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class GetAddressByCep extends UseCase<GetEnderecoByCepInput, Address> {
 

@@ -13,7 +13,7 @@ public interface AddressRepository {
 
     Optional<Address> findById(UUID id);
 
-    Optional<Address> findByCep(String cep);
+    Optional<Address> findByZipCode(String zipCode);
 
     void save(Address address);
 
