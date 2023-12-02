@@ -24,9 +24,9 @@ public class AddressGatewayImpl implements AddressGateway {
 
     @Cacheable("address")
     @Override
-    public Optional<Address> findByCep(String cep) {
+    public Optional<Address> findByZipCode(String zipCode) {
         System.out.println("Buscando no banco");
-        var addressDTO = client.buscarEndereco(cep);
+        var addressDTO = client.buscarEndereco(zipCode);
         if (addressDTO.getErro()) {
             return Optional.empty();
         }

@@ -1,6 +1,6 @@
-package com.test.example.search.domain.usecase.save.input;
+package com.test.example.search.domain.usecase.update.input;
 
-public record SaveByCepInput(
+public record UpdateInput(
         String zipCode,
         String streetAddress,
         String complement,
@@ -9,4 +9,5 @@ public record SaveByCepInput(
         String uf,
         Long views
 ) {
+
 }

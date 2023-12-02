@@ -3,9 +3,9 @@ package com.test.example.search.application.config;
 import com.test.example.search.domain.gateway.AddressGateway;
 import com.test.example.search.domain.reposity.AddressRepository;
 import com.test.example.search.domain.usecase.getAll.GetAllAddresses;
-import com.test.example.search.domain.usecase.getByCep.GetAddressByCep;
+import com.test.example.search.domain.usecase.getByCep.GetAddressByZipCode;
 import com.test.example.search.domain.usecase.save.SaveAddress;
-import com.test.example.search.domain.usecase.update.UpdateViews;
+import com.test.example.search.domain.usecase.update.UpdateAddressIfNotInDataBase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Configuration;
 public class DIConfig {
 
     @Bean
-    public GetAddressByCep getAddressByCep(AddressGateway feignAbstraction) {
-        return new GetAddressByCep(feignAbstraction);
+    public GetAddressByZipCode getAddressByZipCode(AddressGateway feignAbstraction) {
+        return new GetAddressByZipCode(feignAbstraction);
     }
 
     @Bean
@@ -28,7 +28,7 @@ public class DIConfig {
     }
 
     @Bean
-    public UpdateViews updateViews(AddressRepository addressRepository) {
-        return new UpdateViews(addressRepository);
+    public UpdateAddressIfNotInDataBase updateViews(AddressRepository addressRepository) {
+        return new UpdateAddressIfNotInDataBase(addressRepository);
     }
 }

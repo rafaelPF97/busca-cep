@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface AddressGateway {
 
-    Optional<Address> findByCep(String cep);
+    Optional<Address> findByZipCode(String zipCode);
 
     void saveSearch(Address address);
 }

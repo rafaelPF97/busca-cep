@@ -39,7 +39,8 @@ public class Address implements Serializable {
                                  String locality,
                                  String uf,
                                  Long views) {
-        return new Address(UUID.randomUUID(),
+        return new Address(
+                UUID.randomUUID(),
                 zipCode,
                 streetAddress,
                 complement,
@@ -51,19 +52,19 @@ public class Address implements Serializable {
     }
 
     public static Address create(UUID id,
-                                 String cep,
+                                 String zipCode,
                                  String streetAddress,
-                                 String complemento,
-                                 String bairro,
-                                 String localidade,
+                                 String complement,
+                                 String district,
+                                 String locality,
                                  String uf,
                                  Long views) {
         return new Address(id,
-                cep,
+                zipCode,
                 streetAddress,
-                complemento,
-                bairro,
-                localidade,
+                complement,
+                district,
+                locality,
                 uf,
                 views);
     }
