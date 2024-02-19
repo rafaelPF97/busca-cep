@@ -1,7 +1,7 @@
 package com.test.example.search.domain.usecase.getByCep.input;
 
 public record GetAddressByZipCodeInput(
-        String cep
+        String zipCode
 ) {
 
     public static GetAddressByZipCodeInput create(String cep) {

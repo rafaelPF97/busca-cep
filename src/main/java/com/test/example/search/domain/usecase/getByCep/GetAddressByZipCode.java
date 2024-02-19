@@ -16,8 +16,8 @@ public class GetAddressByZipCode extends UseCase<GetAddressByZipCodeInput, Addre
 
     @Override
     public Address execute(GetAddressByZipCodeInput getAddressByZipCodeInput) {
-        Address address = gateway.findByZipCode(getAddressByZipCodeInput.cep()).orElseThrow(
-                () -> new ZipCodeNotFoundException(getAddressByZipCodeInput.cep())
+        Address address = gateway.findByZipCode(getAddressByZipCodeInput.zipCode()).orElseThrow(
+                () -> new ZipCodeNotFoundException(getAddressByZipCodeInput.zipCode())
         );
 
         gateway.saveSearch(address);

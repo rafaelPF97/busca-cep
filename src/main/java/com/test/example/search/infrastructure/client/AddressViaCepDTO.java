@@ -5,26 +5,26 @@ import com.test.example.search.domain.model.Address;
 
 public class AddressViaCepDTO {
 
-    private String zipCode;
-    private String streetAddress;
-    private String complement;
-    private String district;
-    private String locality;
+    private String cep;
+    private String logradouro;
+    private String complemento;
+    private String bairro;
+    private String localidade;
     private String uf;
     private Boolean erro = false;
 
-    public AddressViaCepDTO(String zipCode,
-                            String streetAddress,
-                            String complement,
-                            String district,
-                            String locality,
+    public AddressViaCepDTO(String cep,
+                            String logradouro,
+                            String complemento,
+                            String bairro,
+                            String localidade,
                             String uf,
                             Boolean erro) {
-        this.zipCode = zipCode;
-        this.streetAddress = streetAddress;
-        this.complement = complement;
-        this.district = district;
-        this.locality = locality;
+        this.cep = cep;
+        this.logradouro = logradouro;
+        this.complemento = complemento;
+        this.bairro = bairro;
+        this.localidade = localidade;
         this.uf = uf;
         this.erro = erro;
 
@@ -34,24 +34,24 @@ public class AddressViaCepDTO {
     public AddressViaCepDTO() {
     }
 
-    public String getZipCode() {
-        return zipCode;
+    public String getCep() {
+        return cep;
     }
 
-    public String getStreetAddress() {
-        return streetAddress;
+    public String getLogradouro() {
+        return logradouro;
     }
 
-    public String getComplement() {
-        return complement;
+    public String getComplemento() {
+        return complemento;
     }
 
-    public String getDistrict() {
-        return district;
+    public String getBairro() {
+        return bairro;
     }
 
-    public String getLocality() {
-        return locality;
+    public String getLocalidade() {
+        return localidade;
     }
 
     public String getUf() {
@@ -63,11 +63,11 @@ public class AddressViaCepDTO {
     }
 
     public Address toDomain() {
-        return Address.create(this.getZipCode(),
-                this.getStreetAddress(),
-                this.getComplement(),
-                this.getDistrict(),
-                this.getLocality(),
+        return Address.create(this.getCep(),
+                this.getLogradouro(),
+                this.getComplemento(),
+                this.getBairro(),
+                this.getLocalidade(),
                 this.getUf(),
                 0L);
     }
